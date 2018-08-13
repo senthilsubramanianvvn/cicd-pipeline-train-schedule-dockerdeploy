@@ -15,10 +15,7 @@ pipeline {
             steps {
                 script {
                     def app = docker.build("senthilbalaji/train-schedule")
-                    app.inside {
-                        sh 'echo $(curl localhost:8080)'
-                    }
-                }
+                                   }
             }
         }
         stage('Push Docker Image') {

@@ -14,7 +14,7 @@ pipeline {
             }
             steps {
                 script {
-                    def app = docker.build("senthilbalaji/train-schedule")
+                    app = docker.build("senthilbalaji/train-schedule")
                                    }
             }
         }
